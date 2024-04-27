@@ -7,6 +7,7 @@ import {
   Loading,
   SuccessFilled,
   WarningFilled,
+  StarFilled,
 } from '@element-plus/icons-vue'
 import { definePropType } from './props'
 
@@ -28,9 +29,11 @@ export const TypeComponents = {
   InfoFilled,
   WarningFilled,
   CircleCloseFilled,
+  StarFilled,
 }
 
 export const TypeComponentsMap = {
+  primary: StarFilled,
   success: SuccessFilled,
   warning: WarningFilled,
   error: CircleCloseFilled,

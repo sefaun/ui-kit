@@ -149,7 +149,7 @@ $dropdown-menu-padding-vertical: map.merge(
   top: 0;
   left: 0;
   z-index: getCssVar('dropdown-menu-index');
-  padding: map.get($dropdown-menu-padding-vertical, 'default')-$border-width 0;
+  padding: map.get($dropdown-menu-padding-vertical, 'default') 6px;
   margin: 0;
   background-color: getCssVar('bg-color', 'overlay');
   border: none;
@@ -167,6 +167,7 @@ $dropdown-menu-padding-vertical: map.merge(
     margin: 0;
     font-size: getCssVar('font-size', 'base');
     color: getCssVar('text-color', 'regular');
+    border-radius: getCssVar('border-radius-base');
     cursor: pointer;
     outline: none;
     &:not(.is-disabled):focus {
