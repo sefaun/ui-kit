@@ -9,7 +9,7 @@
 // skipAutoTranslation 1
 
 // types
-$types: primary, success, warning, danger, error, info;
+$types: primary, success, warning, danger, error, info, fade;
 
 // Color
 $colors: () !default;
@@ -18,7 +18,7 @@ $colors: map.deep-merge(
     'white': #ffffff,
     'black': #000000,
     'primary': (
-      'base': #409eff,
+      'base': #d81e5b,
     ),
     'success': (
       'base': #67c23a,
@@ -33,6 +33,9 @@ $colors: map.deep-merge(
       'base': #f56c6c,
     ),
     'info': (
+      'base': #409eff,
+    ),
+    'fade': (
       'base': #909399,
     ),
   ),
@@ -47,6 +50,7 @@ $color-warning: map.get($colors, 'warning', 'base') !default;
 $color-danger: map.get($colors, 'danger', 'base') !default;
 $color-error: map.get($colors, 'error', 'base') !default;
 $color-info: map.get($colors, 'info', 'base') !default;
+$color-fade: map.get($colors, 'fade', 'base') !default;
 
 // https://sass-lang.com/documentation/values/maps#immutability
 // mix colors with white/black to generate light/dark level
@@ -442,7 +446,7 @@ $select-dropdown: map.merge(
     'shadow': getCssVar('box-shadow-light'),
     'empty-color': getCssVar('text-color-secondary'),
     'max-height': 274px,
-    'padding': 6px 0,
+    'padding': 6px 6px,
     'empty-padding': 10px 0,
     'header-padding': 10px,
     'footer-padding': 10px,

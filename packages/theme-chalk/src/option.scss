@@ -27,8 +27,8 @@ $checked-icon: "data:image/svg+xml;utf8,%3Csvg class='icon' width='200' height='
 @include b(select-dropdown) {
   @include e(item) {
     font-size: map.get($select, 'font-size');
-    // 20 as the padding of option item, 12 as the size of ✓ icon size
-    padding: 0 #{20 + 12}px 0 20px;
+    // 20 as the padding of option item, 15 as the size of ✓ icon size
+    padding: 0 #{20 + 15}px 0 20px;
     position: relative;
     white-space: nowrap;
     overflow: hidden;
@@ -37,6 +37,7 @@ $checked-icon: "data:image/svg+xml;utf8,%3Csvg class='icon' width='200' height='
     height: map.get($select-option, 'height');
     line-height: map.get($select-option, 'height');
     box-sizing: border-box;
+    border-radius: 4px;
     cursor: pointer;
 
     @include when(hovering) {
@@ -45,7 +46,18 @@ $checked-icon: "data:image/svg+xml;utf8,%3Csvg class='icon' width='200' height='
 
     @include when(selected) {
       color: map.get($select-option, 'selected-text-color');
-      font-weight: bold;
+      &::before {
+        content: '';
+        position: absolute;
+        display: flex;
+        width: 5px;
+        height: 55%;
+        top: 50%;
+        left: 3px;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        background-color: map.get($select-option, 'selected-text-color');
+      }
     }
 
     @include when(disabled) {

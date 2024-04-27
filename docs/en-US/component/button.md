@@ -140,7 +140,7 @@ button/custom
 | Name              | Description                                                             | Type                                                                            | Default |
 | ----------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------- |
 | size              | button size                                                             | ^[enum]`'large'\| 'default'\| 'small'`                                          | —       |
-| type              | button type                                                             | ^[enum]`'primary'\| 'success'\| 'warning'\| 'danger'\| 'info'\| 'text'(delete)` | —       |
+| type              | button type                                                             | ^[enum]`'primary'\| 'success'\| 'warning'\| 'danger'\| 'info'\| 'fade'\|'text'(delete)` | —       |
 | plain             | determine whether it's a plain button                                   | ^[boolean]                                                                      | false   |
 | text ^(2.2.0)     | determine whether it's a text button                                    | ^[boolean]                                                                      | false   |
 | bg ^(2.2.0)       | determine whether the text button background color is always on         | ^[boolean]                                                                      | false   |
@@ -172,7 +172,7 @@ button/custom
 | -------------- | -------------------- | -------------------------------------------------------------------------------------------------------------- |
 | ref            | button html element  | ^[object]`Ref<HTMLButtonElement>`                                                                              |
 | size           | button size          | ^[object]`ComputedRef<'' \| 'small' \| 'default' \| 'large'>`                                                  |
-| type           | button type          | ^[object]`ComputedRef<'' \| 'default' \| 'primary' \| 'success' \| 'warning' \| 'info' \| 'danger' \| 'text'>` |
+| type           | button type          | ^[object]`ComputedRef<'' \| 'default' \| 'primary' \| 'success' \| 'warning' \| 'info' \| 'danger' \| 'fade' \| 'text'>` |
 | disabled       | button disabled      | ^[object]`ComputedRef<boolean>`                                                                                |
 | shouldAddSpace | whether adding space | ^[object]`ComputedRef<boolean>`                                                                                |
 
@@ -183,7 +183,7 @@ button/custom
 | Name | Description                                      | Type                                                           | Default |
 | ---- | ------------------------------------------------ | -------------------------------------------------------------- | ------- |
 | size | control the size of buttons in this button-group | ^[enum]`'large'\| 'default'\| 'small'`                         | —       |
-| type | control the type of buttons in this button-group | ^[enum]`'primary'\| 'success'\| 'warning'\| 'danger'\| 'info'` | —       |
+| type | control the type of buttons in this button-group | ^[enum]`'primary'\| 'success'\| 'warning'\| 'danger'\| 'info'\| 'fade'` | —       |
 
 ### ButtonGroup Slots
 

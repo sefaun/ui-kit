@@ -10,6 +10,7 @@ export const buttonTypes = [
   'warning',
   'info',
   'danger',
+  'fade',
   /**
    * @deprecated
    * Text type will be deprecated in the next major version (3.0.0)

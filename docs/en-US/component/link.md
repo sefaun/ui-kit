@@ -59,7 +59,7 @@ link/with-icon
 
 | Name      | Description                         | Type                                                                            | Default |
 | --------- | ----------------------------------- | ------------------------------------------------------------------------------- | ------- |
-| type      | type                                | ^[enum]`'primary' \| 'success' \| 'warning' \| 'danger' \| 'info' \| 'default'` | default |
+| type      | type                                | ^[enum]`'primary' \| 'success' \| 'warning' \| 'danger' \| 'info' \| 'fade' \| 'default'` | default |
 | underline | whether the component has underline | ^[boolean]                                                                      | true    |
 | disabled  | whether the component is disabled   | ^[boolean]                                                                      | false   |
 | href      | same as native hyperlink's `href`   | ^[string]                                                                       | —       |

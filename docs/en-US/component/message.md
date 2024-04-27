@@ -123,7 +123,7 @@ ElMessage({}, appContext)
 | Name                     | Description                                                                                          | Type                                                 | Default |
 |--------------------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------|---------|
 | message                  | message text                                                                                         | ^[string] / ^[VNode] / ^[Function]`() => VNode`      | ''      |
-| type                     | message type                                                                                         | ^[enum]`'success' \| 'warning' \| 'info' \| 'error'` | info    |
+| type                     | message type                                                                                         | ^[enum]`'success' \| 'warning' \| 'info' \| 'error' \| 'fade'` | info    |
 | plain ^(2.6.3)           | whether message is plain                                                                             | ^[boolean]                                           | false   |
 | icon                     | custom icon component, overrides `type`                                                              | ^[string] / ^[Component]                             | —       |
 | dangerouslyUseHTMLString | whether `message` is treated as HTML string                                                          | ^[boolean]                                           | false   |

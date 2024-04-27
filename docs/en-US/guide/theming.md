@@ -44,7 +44,7 @@ $colors: map.deep-merge(
     'white': #ffffff,
     'black': #000000,
     'primary': (
-      'base': #409eff,
+      'base': #d81e5b,
     ),
     'success': (
       'base': #67c23a,
@@ -59,6 +59,9 @@ $colors: map.deep-merge(
       'base': #f56c6c,
     ),
     'info': (
+      'base': #409eff,
+    ),
+    'fade': (
       'base': #909399,
     ),
   ),

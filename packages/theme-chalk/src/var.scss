@@ -13,7 +13,7 @@
   @include set-css-var-value('color-black', $color-black);
 
   // get rgb
-  @each $type in (primary, success, warning, danger, error, info) {
+  @each $type in (primary, success, warning, danger, error, info, fade) {
     @include set-css-color-rgb($type);
   }
 
@@ -48,7 +48,7 @@
 
   // --el-color-#{$type}
   // --el-color-#{$type}-light-{$i}
-  @each $type in (primary, success, warning, danger, error, info) {
+  @each $type in (primary, success, warning, danger, error, info, fade) {
     @include set-css-color-type($colors, $type);
   }
 
